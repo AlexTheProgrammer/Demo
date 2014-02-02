@@ -1,0 +1,13 @@
+<h1>Hello from Rails!</h1>
+<p>
+	It is now <%= @time %>
+	<% for file in @files%>
+	<ul>
+		file name is: <%=file%>
+	</ul>
+	<% end %>
+</p>
+<p>
+	Time to Say
+	<%= link_to "Goodbye", say_goodbye_path%>!
+</p>
